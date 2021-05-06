@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <arg name="period" default='3' />
+    <arg name="mqtt_ip" default="104.199.238.34" />
+    <arg name="mqtt_port" default='1883' />
+    <arg name="mqtt_topic" default='VehState' />
+
+    <node name="mqtt_publisher" pkg="mqtt_bridge" type="mqtt_publisher.py" output="screen" required="true">
+        <param name="period" value="$(arg period)" />
+        <param name="mqtt_ip" value="$(arg mqtt_ip)" />
+        <param name="mqtt_port" value="$(arg mqtt_port)" />
+        <param name="mqtt_topic" value="$(arg mqtt_topic)" />
+    </node>
+
+</launch>

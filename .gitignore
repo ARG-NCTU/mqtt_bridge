@@ -1,0 +1,24 @@
+*.DS_Store
+*.vscode
+
+# ros related file
+.catkin_workspace
+build/
+devel/
+.vscode
+*.bag
+*.pth
+catkin_ws/bin/
+catkin_ws/include/
+catkin_ws/lib/
+catkin_ws/share/
+*.swp
+*.pyc
+f_cost.txt
+*.graph
+CATKIN_IGNORE
+*.so
+*.png
+*.zip
+*.npy
+*.pkl
