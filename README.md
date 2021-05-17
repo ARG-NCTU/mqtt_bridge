@@ -1,1 +1,1 @@
-# mqtt_ros_package
+# mqtt_bridge
